@@ -1,0 +1,62 @@
+html, body {
+  background: #1a1a1a;
+  height: 100%;
+  margin:0;
+}
+#content {
+  height: 100%;
+  margin: 0;
+}
+.panel {
+  display: block;
+  margin: auto;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+  background: #363636;
+}
+.selRec {}
+.selRec:hover {
+  fill: #dfdfdf;
+  stroke: #ffcc00ff;
+  stroke-width: 3px;
+}
+.whiteSquare {
+  fill: #dfdfdf;
+}
+.blackSquare {
+  fill: #a3a3a3;
+}
+.blackPiece {
+    fill: #000000;
+    stroke-width: 0px;
+    stroke: #ffffff;
+    font: 45px B612 Mono;
+    user-select: none;
+    text-anchor: middle;
+}
+.whitePiece {
+    fill: #ffffff;
+    stroke-width: 1px;
+    stroke: #000000;
+    font: 45px B612 Mono;
+    user-select: none;
+    text-anchor: middle;
+}
+.text {
+    fill: #00ff66ff;
+    stroke-width: 0px;
+    font: 30px B612 Mono;
+    user-select: none;
+}
+.circle  {
+  stroke-width: 0px;
+  stroke: none;
+  fill: #5ad2d0;
+}
+.redStroke  {
+  fill: #d25a5a;
+}
+.greyBox {
+  fill: #c4c4c4;
+}
