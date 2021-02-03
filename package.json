@@ -1,0 +1,24 @@
+{
+  "name": "parts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify ./mainChess.js > docs/app.js",
+    "watch": "watchify ./mainChess.js -o docs/app.js -v"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "lodash": "^4.17.20",
+    "onml": "^1.2.0",
+    "tspan": "^0.4.0",
+    "watchify": "^3.11.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.17.0"
+  }
+}
