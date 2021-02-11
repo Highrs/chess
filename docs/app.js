@@ -85,11 +85,15 @@ const drawSideCoord = () => {
   return sides;
 }
 
+const drawTableBit = (tableOfMoves, i) => {
+  return ['text', {x: 90, y: 45 * (i + 1), class:'text'}, tableOfMoves[i]];
+}
+
 const drawTable = (tableOfMoves) => {
   const drawnTableOfMoves = [];
-  // for (i = 0; i < tableOfMoves.length; i++) {
-  //
-  // }
+  for (let i = 0; i < tableOfMoves.length; i++) {
+    drawTableBit(tableOfMoves, i);
+  }
   return drawnTableOfMoves;
 }
 
@@ -133,14 +137,14 @@ const onml = require('onml');
 
 const boardList = [
 // 0   1   2   3   4   5   6   7
-  'r','n','b','k','q','b','n','r', // 0
+  'r','n','b','q','k','b','n','r', // 0
   'p','p','p','p','p','p','p','p', // 1
   ' ',' ',' ',' ',' ',' ',' ',' ', // 2
   ' ',' ',' ',' ',' ',' ',' ',' ', // 3
   ' ',' ',' ',' ',' ',' ',' ',' ', // 4
   ' ',' ',' ',' ',' ',' ',' ',' ', // 5
   'p','p','p','p','p','p','p','p', // 6
-  'r','n','b','k','q','b','n','r'  // 7
+  'r','n','b','q','k','b','n','r'  // 7
 ];
 
 const boardList2 = boardList.map((e, i) => {

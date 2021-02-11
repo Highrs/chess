@@ -84,11 +84,15 @@ const drawSideCoord = () => {
   return sides;
 }
 
+const drawTableBit = (tableOfMoves, i) => {
+  return ['text', {x: 90, y: 45 * (i + 1), class:'text'}, tableOfMoves[i]];
+}
+
 const drawTable = (tableOfMoves) => {
   const drawnTableOfMoves = [];
-  // for (i = 0; i < tableOfMoves.length; i++) {
-  //
-  // }
+  for (let i = 0; i < tableOfMoves.length; i++) {
+    drawTableBit(tableOfMoves, i);
+  }
   return drawnTableOfMoves;
 }
 
